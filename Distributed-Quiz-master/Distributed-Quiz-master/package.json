@@ -1,0 +1,25 @@
+{
+  "name": "distributed-quiz",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud app deploy app.yaml",
+    "test": "mocha test/index.js -t 30000"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "request": "^2.79.0",
+    "socket.io": "^1.7.1",
+    "uuid": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
